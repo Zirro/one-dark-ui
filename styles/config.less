@@ -44,12 +44,12 @@ html { font-size: @font-size; }
 
     // Pane borders
     // this is a bit trial and error
-    .pane-column:not(:last-child),
-    .pane-row > atom-pane:not(:last-child) {
+    atom-pane-axis.vertical:not(:last-child),
+    atom-pane-axis.horizontal > atom-pane:not(:last-child) {
       border-right: 1px solid @base-border-color;
     }
-    .pane-row:not(:last-child),
-    .pane-column > atom-pane:not(:last-child) {
+    atom-pane-axis.horizontal:not(:last-child),
+    atom-pane-axis.vertical > atom-pane:not(:last-child) {
       border-bottom: 1px solid @base-border-color;
     }
   }
