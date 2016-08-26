@@ -1,3 +1,4 @@
+
 .panel {
   &.bordered {
     border: 1px solid @base-border-color;
@@ -8,6 +9,11 @@
 atom-panel {
   .text(normal);
   position: relative;
+
+  &.left   { border-right: 1px solid @base-border-color; }
+  &.right  { border-left: 1px solid @base-border-color; }
+  &.top    { border-bottom: 1px solid @base-border-color; }
+  &.bottom { border-top: 1px solid @base-border-color; }
 }
 
 .inset-panel {
