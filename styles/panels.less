@@ -14,6 +14,10 @@ atom-panel {
   &.right  { border-left: 1px solid @base-border-color; }
   &.top    { border-bottom: 1px solid @base-border-color; }
   &.bottom { border-top: 1px solid @base-border-color; }
+
+  &:empty {
+    border: none;
+  }
 }
 
 .inset-panel {
